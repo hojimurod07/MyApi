@@ -1,4 +1,5 @@
 ﻿using Infastructure.Interfaces;
+using Infrastructure;
 
 namespace Infastructure.Repositories
 {
