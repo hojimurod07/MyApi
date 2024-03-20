@@ -9,7 +9,7 @@ namespace Aplication.Interfaces
         Task<List<CategoryDto>> GetAllAsync();
         Task<CategoryDto> GetByIdAsync(int id);
         Task AddAsync(AddCategoryDto categoryDto);
-        Task UpdateAsync(UpdateCategoryDto categoryDto);
+        Task UpdateAsync(UpdateCategoryDto dto);
         Task DeleteAsync(int id);
     }
 }
