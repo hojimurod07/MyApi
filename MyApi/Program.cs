@@ -5,6 +5,8 @@ using Aplication.Validators;
 using AutoMapper;
 using Domain.Entities;
 using FluentValidation;
+using Infastructure.Interfaces;
+using Infastructure.Repositories;
 using Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,7 +30,7 @@ var configuration = new MapperConfiguration(cfg =>
 builder.Services.AddSingleton(configuration.CreateMapper());
 builder.Services.AddScoped<IValidator<Category>, CategoryValidator>();
 builder.Services.AddScoped<IValidator<Product>, ProductValidator>();
-
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<IProductService, ProductService>();
 

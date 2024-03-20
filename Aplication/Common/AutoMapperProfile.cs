@@ -14,8 +14,8 @@ public class AutoMapperProfile : Profile
         CreateMap<UpdateCategoryDto, Category>();
         CreateMap<Category, CategoryDto>().ReverseMap();
 
-        CreateMap<AddProductDto, ProductDto>();
-        CreateMap<UpdateProductDto, ProductDto>();
+        CreateMap<AddProductDto, Product>();
+        CreateMap<UpdateProductDto, Product>();
         CreateMap<Product, ProductDto>().ReverseMap();
     }
 }

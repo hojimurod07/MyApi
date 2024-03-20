@@ -1,8 +1,4 @@
-﻿
-
-using Aplication.DTOs.CategoryDTOS;
-
-namespace Aplication.DTOs.ProductDTOS
+﻿namespace Aplication.DTOs.ProductDTOS
 {
     public class ProductDto
     {
@@ -12,7 +8,6 @@ namespace Aplication.DTOs.ProductDTOS
         public double Price { get; set; }
 
         public int CategoryId { get; set; }
-        public CategoryDto Category { get; set; } = new CategoryDto();
-        public List<CategoryDto> Categories { get; set; } = new List<CategoryDto>();
+
     }
 }
